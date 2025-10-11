@@ -8,6 +8,9 @@ import AccountCard from "./_components/account-card";
 import { getCurrentBudget } from "@/actions/budget";
 import { logDisallowedDynamicError } from "next/dist/server/app-render/dynamic-rendering";
 import DashboardOverview from "./_components/transaction-overview";
+import AssistantChat from "@/components/AssistantChat"; // Adjust path if needed
+import FloatingChat from "@/components/FloatingChat";
+
 
 async function DashboardPage() {
 const accounts = await getUserAccounts();
@@ -57,7 +60,10 @@ const defaultAccount = accounts?.find((account) => account.isDefault);
         return <AccountCard key={account.id} account={account}/>;
       })}
       </div>   
-
+      {/* <div className="mt-8">
+  <AssistantChat />
+</div> */}
+<FloatingChat />
     </div>;
 };
 

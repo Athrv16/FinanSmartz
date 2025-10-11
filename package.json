@@ -38,6 +38,7 @@
     "react-day-picker": "^9.9.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.62.0",
+    "react-markdown": "^10.1.0",
     "react-spinners": "^0.17.0",
     "recharts": "^3.2.1",
     "resend": "^6.1.0",
