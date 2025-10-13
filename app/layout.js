@@ -10,6 +10,11 @@ const inter = Inter({subsets: ["latin"]});
 export const metadata = {
   title: "FinanSmartz",
   description: "One Stop Finance Platform",
+  icons: {
+    icon: "/top.ico",
+    shortcut: "/top.ico",
+    apple: "/top.png",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -70,7 +70,7 @@ export default function Home() {
               </div>
             </section>
 
-                      <section className="py-20">
+                      {/* <section className="py-20">
                         <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center mb-16">
                         What our users say                 </h2>
@@ -98,7 +98,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-                      </section>
+                      </section> */}
 
                       <section className="py-20 bg-blue-600">
                          <div className="container mx-auto px-4 text-center">
@@ -114,7 +114,7 @@ export default function Home() {
               size="lg"
               className="bg-white text-blue-600 hover:bg-blue-50 animate-bounce"
             >
-              Start Free Trial
+              Let's Start
             </Button>
           </Link>
         </div>
