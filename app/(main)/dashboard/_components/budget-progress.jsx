@@ -91,8 +91,8 @@ const BudgetProgress = ({ initialBudget, currentExpenses }) => {
                         </div>
                         ):(
                             <>
-                            <CardDescription>{initialBudget ? `$${currentExpenses.toFixed(2)} 
-                            of $${initialBudget.amount.toFixed(2)} spent`
+                            <CardDescription>{initialBudget ? `₹${currentExpenses.toFixed(2)}
+                            of ₹${initialBudget.amount.toFixed(2)} spent`
                         : "No Budget Set"}</CardDescription>
 
                         <Button variant="ghost"

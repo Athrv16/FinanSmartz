@@ -87,12 +87,12 @@ const AccountChart = ({ transactions }) => {
     <div className='flex justify-around mb-6 text-sm'>
         <div className='text-center'>
             <p className='text-muted-foreground'>Total Income</p>
-            <p className='text-lg font-bold text-green-500'>${totals.income.toFixed(2)}</p>
+            <p className='text-lg font-bold text-green-500'>₹{totals.income.toFixed(2)}</p>
         </div>
 
          <div className='text-center'>
             <p className='text-muted-foreground'>Total Expense</p>
-            <p className='text-lg font-bold text-red-500'>${totals.expense.toFixed(2)}</p>
+            <p className='text-lg font-bold text-red-500'>₹{totals.expense.toFixed(2)}</p>
         </div>
 
          <div className='text-center'>
@@ -100,7 +100,7 @@ const AccountChart = ({ transactions }) => {
             <p className={`text-lg font-bold ${totals.income - totals.expense >= 0 
                 ? "text-green-500" 
                 : "text-red-500"
-            }`}>${(totals.income - totals.expense).toFixed(2)}</p>
+            }`}>₹{(totals.income - totals.expense).toFixed(2)}</p>
         </div>
 
     </div>
@@ -122,8 +122,8 @@ const AccountChart = ({ transactions }) => {
         fontSize={12}
         tickLine={false}
         axisLine={false}
-        tickFormatter={(value)=>`$${value}`}/>
-        <Tooltip formatter={(value)=>[`$${value}`, undefined]}/>
+        tickFormatter={(value)=>`₹${value}`}/>
+        <Tooltip formatter={(value)=>[`₹${value}`, undefined]}/>
         <Legend />
         <Bar dataKey="income" name="Income" fill="#22c55e" radius={[4,4,0,0]}  />
         <Bar dataKey="expense" name="Expense" fill="#ef4444" radius={[4,4,0,0]} />
