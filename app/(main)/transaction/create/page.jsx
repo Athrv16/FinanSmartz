@@ -21,7 +21,14 @@ const AddTransactionPage = async ({searchParams}) => {
 
   return (
     <div className='max-w-3xl mx-auto px-5'>
-        <h1 className='text-5xl gradient-title mb-8'>{editId?"Edit":"Add"} Transaction</h1>
+        <h1 style={{
+        fontSize: '3.75rem', // same as text-6xl
+        fontWeight: 'bold',
+        marginBottom: '1.25rem', // same as mb-5
+        background: 'linear-gradient(90deg, #2A6DF4 0%, #8A3FFC 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+      }}>{editId?"Edit":"Add"} Transaction</h1>
 
         <AddTransactionForm accounts={accounts} categories={defaultCategories}
         editMode = {!!editId}

@@ -20,7 +20,14 @@ const AccountPage = async ({params}) => {
   <div className='space-y-8 px-5'>
         <div className="flex gap-4 items-end justify-between">
             <div>
-            <h1 className='text-5xl sm:text-6l font-bold gradient-title capitalize'>{account.name}</h1>
+            <h1 style={{
+        fontSize: '3.75rem', // same as text-6xl
+        fontWeight: 'bold',
+        marginBottom: '1.25rem', // same as mb-5
+        background: 'linear-gradient(90deg, #2A6DF4 0%, #8A3FFC 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+      }}>{account.name}</h1>
             <p className='text-muted-foreground'>{account.type.charAt(0) + account.type.slice(1).toLowerCase()} Account </p>
         </div>
 
