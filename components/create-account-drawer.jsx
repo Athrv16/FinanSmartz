@@ -58,8 +58,8 @@ export const CreateAccountDrawer = ({ children }) => {
 
 
 const onSubmit=async(data)=>{
-    await craeteAccountFn(data);
-    
+    await createAccountFn(data);
+
 };
 
 
